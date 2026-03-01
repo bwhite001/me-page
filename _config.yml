@@ -25,7 +25,7 @@ theme_color: "#101010"
 # Sidebar author card
 author:
   name: Brandon White
-  # picture: /assets/img/avatar.jpg  # add avatar.jpg when ready
+  picture: /assets/img/avatar.jpg
   email: brandon@bwhite.id.au
   social:
     - title: GitHub
