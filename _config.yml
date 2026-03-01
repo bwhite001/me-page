@@ -1,0 +1,58 @@
+title: Brandon White
+tagline: Building things and breaking things.
+description: >-
+  A small corner of the internet that's just about me —
+  ham radio, home automation, cats, and other things I enjoy.
+
+url: "https://bwhite.id.au"
+baseurl: ""
+
+remote_theme: hydecorp/hydejack@v9
+
+# Hydejack settings
+hydejack:
+  dark_mode:
+    always: true
+    dynamic: false
+    icon: false
+  accent_image:
+    background: "#1a1a2e"
+    overlay: false
+
+accent_color: "#FFB74D"
+theme_color: "#101010"
+
+# Sidebar author card
+author:
+  name: Brandon White
+  # picture: /assets/img/avatar.jpg  # add avatar.jpg when ready
+  email: brandon@bwhite.id.au
+  social:
+    - title: GitHub
+      url: https://github.com/bwhite001
+      icon: github
+    - title: Steam
+      url: https://steamcommunity.com/id/bwhite001
+      icon: steam
+    - title: Ipswich Radio Club
+      url: https://ipswichradioclub.org.au/
+      icon: radio
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docs/
+  - node_modules/
+  - vendor/
