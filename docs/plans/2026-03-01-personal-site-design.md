@@ -100,8 +100,8 @@ me-page/
 
 - **Theme:** Hydejack (free, v9.x)
 - **Mode:** Dark (enabled in `_config.yml`)
-- **Sidebar:** Avatar placeholder + "Brandon White" + short tagline + nav links
-- **Accent colour:** To be chosen during implementation (suggest teal or blue — techy, not garish)
+- **Sidebar:** Avatar placeholder + "Brandon White" + tagline "Building things and breaking things." + nav links
+- **Accent colour:** Amber `#FFB74D` (warm, ham-radio-ish)
 - **Tone:** Friendly, minimal, personal — not a dev portfolio
 
 ## Decisions Made

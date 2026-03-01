@@ -13,7 +13,7 @@
 ## Context: Hydejack Setup Notes
 
 - Hydejack free tier: install via `gem "jekyll-theme-hydejack"` in Gemfile
-- Dark mode: set `theme_color: '#101010'` and `accent_color: '#4FB3BF'` (teal) in `_config.yml`, plus `hydejack.dark_mode.always: true`
+- Dark mode: set `theme_color: '#101010'` and `accent_color: '#FFB74D'` (amber) in `_config.yml`, plus `hydejack.dark_mode.always: true`
 - Sidebar author info is driven by `author:` key in `_config.yml`
 - Nav pages appear in sidebar via `menu: true` in each page's front matter
 - Social links in sidebar via `author.social:` array in `_config.yml`
@@ -51,7 +51,7 @@ end
 ```yaml
 # _config.yml
 title: Brandon White
-tagline: VK4BRW · QLD · Tinkerer
+tagline: Building things and breaking things.
 description: >-
   A small corner of the internet that's just about me —
   ham radio, home automation, cats, and other things I enjoy.
@@ -71,7 +71,7 @@ hydejack:
     background: "#1a1a2e"
     overlay: false
 
-accent_color: "#4FB3BF"
+accent_color: "#FFB74D"
 theme_color: "#101010"
 
 # Sidebar author card
