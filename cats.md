@@ -22,7 +22,7 @@ and convinced that he deserves more food than the others.
 
 **Ender** — Tuxedo cat
 
-Named after the Minecraft Enderman — the tuxedo markings clinched it.
+Named after the Minecraft Enderman — specifically the eyes.
 Prefers to observe from a distance and will teleport to wherever you least
 want a cat to be sitting.
 
