@@ -22,9 +22,9 @@ and convinced that he deserves more food than the others.
 
 **Ender** — Tuxedo cat
 
-Classic tuxedo markings. Named after Ender Wiggin. Very dignified.
-Will sit on whatever you're currently using and make eye contact until
-you acknowledge him.
+Named after the Minecraft Enderman — the tuxedo markings clinched it.
+Prefers to observe from a distance and will teleport to wherever you least
+want a cat to be sitting.
 
 ---
 
@@ -37,5 +37,6 @@ he's gentle, patient, and mostly just wants a warm spot to sleep.
 
 **Hex** — Mini Maine Coon
 
-The smallest one and absolutely aware of it. Compensates with an outsized
-personality and a very loud meow for her size. Sassy is an understatement.
+Sassy. Knows it. Treats the other three cats as an inconvenience and
+the humans as staff. Tiny in size, enormous in attitude, and very
+clear about what she wants at all times.
