@@ -1,0 +1,214 @@
+/* ============================================================
+   Terminal Theme — bwhite.id.au
+   Layered on top of Hydejack v9 via custom CSS override.
+   ============================================================ */
+
+/* --- Custom properties --- */
+:root,
+html {
+  --term-bg:           #070910;
+  --term-surface:      #0d1117;
+  --term-text:         #d8dce8;
+  --term-muted:        #6b7280;
+  --term-amber:        #FFB74D;
+  --term-amber-faded:  rgba(255, 183, 77, 0.18);
+  --term-amber-border: rgba(255, 183, 77, 0.28);
+  --term-cyan:         #26C6DA;
+  --term-cyan-faded:   rgba(38, 198, 218, 0.25);
+  --term-border:       rgba(255, 183, 77, 0.22);
+
+  /* Override Hydejack's accent variables so its JS hover/focus logic stays consistent */
+  --accent-color:           var(--term-amber);
+  --accent-color-faded:     var(--term-amber-faded);
+  --accent-color-highlight: var(--term-amber-faded);
+}
+
+/* --- Base body --- */
+body.dark-mode {
+  background-color: var(--term-bg) !important;
+  color: var(--term-text);
+}
+
+/* ============================================================
+   Scanline overlay
+   ============================================================ */
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.04) 2px,
+    rgba(0, 0, 0, 0.04) 4px
+  );
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+}
+
+/* ============================================================
+   Sidebar
+   ============================================================ */
+
+/* Panel */
+#_sidebar,
+.sidebar {
+  background-color: var(--term-surface) !important;
+  border-right: 1px solid var(--term-amber) !important;
+  box-shadow: 2px 0 16px rgba(0, 0, 0, 0.7) !important;
+}
+
+.sidebar-bg {
+  background-color: var(--term-surface) !important;
+  background-image: none !important;
+}
+
+/* Site title */
+.sidebar-title {
+  text-decoration: none;
+}
+
+.sidebar-title h2,
+.sidebar-title .h1 {
+  font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+  color: var(--term-amber) !important;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 12px var(--term-amber-faded);
+}
+
+/* Tagline */
+.sidebar-about p {
+  color: var(--term-muted);
+  font-size: 0.78rem;
+}
+
+/* Nav links */
+.sidebar-nav-item {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--term-muted) !important;
+  transition: color 0.15s ease, text-shadow 0.15s ease;
+  padding: 0.3rem 0;
+  display: block;
+}
+
+.sidebar-nav-item:hover,
+#_navigation.sidebar-nav-item {
+  color: var(--term-amber) !important;
+  text-shadow: 0 0 10px var(--term-amber-faded);
+  text-decoration: none;
+}
+
+/* Social icons */
+.sidebar-social a {
+  color: var(--term-muted) !important;
+  transition: color 0.15s ease;
+}
+
+.sidebar-social a:hover {
+  color: var(--term-cyan) !important;
+}
+
+/* Avatar — amber ring */
+.sidebar-about img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--term-amber), 0 0 16px var(--term-amber-faded);
+}
+
+/* ============================================================
+   Typography & Content
+   ============================================================ */
+
+/* Headings — monospace */
+h1, h2, h3,
+.page-title {
+  font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+  letter-spacing: 0.02em;
+}
+
+/* h1 / page-title: terminal prompt prefix */
+h1::before,
+.page-title::before {
+  content: "> ";
+  color: var(--term-amber);
+  opacity: 0.8;
+}
+
+/* Content column — ~80-col terminal feel */
+#_main .content,
+article.page {
+  max-width: 72ch;
+}
+
+/* Links */
+a {
+  color: var(--term-amber);
+}
+
+a:hover {
+  color: var(--term-amber);
+  text-shadow: 0 0 8px var(--term-amber-faded);
+  text-decoration: underline;
+}
+
+/* Description line under page title */
+p.note-sm {
+  color: var(--term-muted);
+  font-size: 0.85rem;
+  border-left: 2px solid var(--term-cyan-faded);
+  padding-left: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Code blocks */
+pre, code {
+  font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace !important;
+  background-color: var(--term-surface) !important;
+}
+
+pre {
+  border-left: 3px solid var(--term-cyan) !important;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Horizontal rules */
+hr {
+  border-color: var(--term-border);
+}
+
+/* ============================================================
+   Circuit Frame (.pcb-frame)
+   Applied by terminal-page.html and welcome.html layouts
+   ============================================================ */
+
+.pcb-frame {
+  position: relative;
+  border-left: 2px solid rgba(38, 198, 218, 0.3);
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+/* SVG corner ornaments are inlined in the layout templates */
+.pcb-corner {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.pcb-corner--tr {
+  top: 0;
+  right: 0;
+}
+
+.pcb-corner--bl {
+  bottom: 0;
+  left: -2px; /* align with the border-left */
+  transform: rotate(180deg);
+}
