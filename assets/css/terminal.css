@@ -64,7 +64,6 @@ body::before {
 
 .sidebar-bg {
   background-color: var(--term-surface) !important;
-  background-image: none !important;
 }
 
 /* Site title */

@@ -16,8 +16,8 @@ hydejack:
     dynamic: false
     icon: false
   accent_image:
-    background: "#1a1a2e"
-    overlay: false
+    background: /assets/img/sidebar-bg.jpg
+    overlay: true
 
 accent_color: "#FFB74D"
 theme_color: "#101010"
