@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: terminal-page
 title: The Cats
 description: >-
   Wheatley, Ender, Lucifer, and Hex — the four cats who actually run this house.

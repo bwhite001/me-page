@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: terminal-page
 title: About
 description: >-
   Who I am — Queensland, tinkering, and a few things I care about.

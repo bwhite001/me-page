@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: terminal-page
 title: Find Me
 description: >-
   Where to find Brandon online — GitHub, Steam, QRZ, email, and the radio club.

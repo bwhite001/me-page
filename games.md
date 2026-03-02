@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: terminal-page
 title: Games
 description: >-
   Automation and factory games on Steam — build it, destroy it, replay it.

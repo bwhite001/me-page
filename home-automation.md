@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: terminal-page
 title: Home Automation
 description: >-
   Home Assistant, presence-based AC, garden watering, and making the house

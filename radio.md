@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: terminal-page
 title: Radio & Meshtastic
 description: >-
   Ham radio as VK4BRW, JOTA, digital modes, WICEN, and Meshtastic mesh comms.
