@@ -1,5 +1,5 @@
 ---
-layout: welcome
+layout: home
 title: Hi, I'm Brandon
 cover: false
 ---
